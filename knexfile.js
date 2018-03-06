@@ -5,7 +5,7 @@ const BASE_PATH = path.join(__dirname, 'src', 'server', 'db');
 module.exports = {
   test: {
     client: 'pg',
-    connection: 'postgres://localhost:5432/koa_api_test',
+    connection: 'mongodb://localhost:27017/tbrdb',
     migrations: {
       directory: path.join(BASE_PATH, 'migrations')
     },
@@ -15,7 +15,7 @@ module.exports = {
   },
   development: {
     client: 'pg',
-    connection: 'postgres://localhost:5432/koa_api',
+    connection: 'mongodb://localhost:27017/tbrdb',
     migrations: {
       directory: path.join(BASE_PATH, 'migrations')
     },
